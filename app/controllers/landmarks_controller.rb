@@ -29,7 +29,8 @@ class LandmarksController < ApplicationController
 
   patch '/landmarks/:id' do
     binding.pry
-    @landmark = Landmark.update(params[:landmark])
+    @landmark = Landmark.find(params[:id])
+     @landmark.update(params[:landmark])
     erb ":landmarks/#{@landmark.id}"
   end
 
