@@ -32,7 +32,7 @@ class LandmarksController < ApplicationController
      @landmark.update(params[:landmark])
      @landmark.save
     #  binding.pry
-  
+
     redirect :"/landmarks/#{@landmark.id}"
   end
 
