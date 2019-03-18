@@ -13,7 +13,9 @@ class LandmarksController < ApplicationController
 
   post '/landmarks' do
     # binding.pry
-    Landmark.create(params[:landmark])
-    erb ':landmarks/show'
+    @landmark = Landmark.create(params[:landmark])
+    erb ":landmarks/#{@landmark.id}"
   end
+
+  get '/landmarks/:id'
 end
