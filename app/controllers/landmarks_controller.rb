@@ -20,5 +20,5 @@ class LandmarksController < ApplicationController
   get '/landmarks/:id'
   @landmark = Landmark.find()
   erb :'landmarks/show'
-  end 
+  end
 end
