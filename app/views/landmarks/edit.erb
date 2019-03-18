@@ -6,9 +6,9 @@
   
   <label><h3>Edit Your Landmark</h3></label>
   <h4>Name:</h4>
-  <input type="text" name="landmark[name]" id="landmark_name"><br>
+  <input type="text" name="landmark[name]" id="landmark_name" value="<%=@landmark.name%>"><br>
   <label><h4>Year Completed</h4></label>
-  <input type="integer" name="landmark[year_completed]" id="landmark_year_completed"><br>
+  <input type="integer" name="landmark[year_completed]" id="landmark_year_completed" value="<%=@landmark.year_completed%>"><br>
 
   <input type="submit" value="Create New Landmark">
 </form>
