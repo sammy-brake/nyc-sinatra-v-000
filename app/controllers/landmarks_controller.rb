@@ -31,7 +31,7 @@ class LandmarksController < ApplicationController
     @landmark = Landmark.find(params[:id])
      @landmark.update(params[:landmark])
      @landmark.save
-    erb ":landmarks/#{@landmark.id}"
+    erb ":landmarks/show"
   end
 
 end
