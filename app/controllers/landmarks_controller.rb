@@ -28,6 +28,8 @@ class LandmarksController < ApplicationController
   end
 
   patch '/landmarks/:id' do
+    @landmark = Landmark.update(params[:landmark])
+    erb ":landmarks/#{@landmark.id}"
   end
 
 end
